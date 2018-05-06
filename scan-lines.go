@@ -1,12 +1,12 @@
 package main
 
 import (
-	"fmt"
 	"bufio"
+	"fmt"
 	"os"
 )
 
-func main() {
+func keyboardRead() {
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Print("Enter text: ")
 	text, _ := reader.ReadString('\n')
@@ -17,6 +17,4 @@ func main() {
 		fmt.Println(scanner.Text())
 	}
 
-
 }
-
